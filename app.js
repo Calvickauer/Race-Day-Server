@@ -9,6 +9,8 @@ require('./config/passport')(passport);
 // App Set up
 const app = express();
 const PORT = process.env.PORT || 8000;
+console.log(`Environment variables: ${JSON.stringify(process.env)}`);
+
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
